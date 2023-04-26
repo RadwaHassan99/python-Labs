@@ -19,19 +19,9 @@ heredoc string --------> example <br>
 5- Write a Python program that will accept the base and height of a triangle and compute
 the area. <br>
 
-6- Write a Python program to construct the following pattern, using a nested for loop.
-Search about method
-end=””
-*
-* *
-* * *
-* * * *
-* * * * *
-* * * *
-* * *
-* *
-* <br>
-* 
+6- Write a Python program to construct the following pattern, using a nested for loop.<br>
+![image](https://user-images.githubusercontent.com/63107268/234718751-1484e7c7-75ee-4275-897f-c186a5f2a1be.png) <br>
+
 7- Write a Python program that accepts a word from the user and reverse it.<br>
 
 8- Write a Python program that prints all the numbers from 0 to 6 except 3 and 6. <br>
