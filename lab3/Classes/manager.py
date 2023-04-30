@@ -19,5 +19,11 @@ class Manager(Employee):
         else:
             print(f"No employee with ID {id} found")
 
+    @staticmethod
+    def print_data(record):
+        table = PrettyTable()
+        table.field_names = ["ID", "First Name", "Last Name", "Age", "Department", "Salary","Mangaed_department"]
+        table.add_row([record[0], record[1], record[2], record[3], record[4],'Confidential',record[6]])
+        print(table)
 
   

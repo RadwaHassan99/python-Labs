@@ -51,17 +51,30 @@ class Employee:
 
     @classmethod
     def list_employees(cls):
+        table = PrettyTable()
+        table.field_names = ["ID", "First Name", "Last Name", "Age", "Department", "Salary","managed_department"]
         for employee in cls.employees:
-            cls.print_data(employee)
+            if(employee[6]!=' '):
+                table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],'confedentianal',employee[6]])
+            else:
+                table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],employee[5],employee[6]])
+        print(table)
 
     @classmethod
     def show(cls, id):
+        table = PrettyTable()
+        table.field_names = ["ID", "First Name", "Last Name", "Age", "Department", "Salary","managed_department"]
         if cls.is_valid_id(id):
             for row in cls.employees:
                 if row[0] == id:
-                    cls.print_data(row)
+                    if row[6] !=' ':
+                        table.add_row([row[0], row[1], row[2], row[3], row[4],row[5],row[6]])
+                    else:
+                        table.add_row([row[0], row[1], row[2], row[3], row[4],'',row[6]])
+
         else:
             print(f"Invalid id: {id}")
+        print(table)    
 
     @classmethod
     def is_valid_id(cls, id):
@@ -75,7 +88,7 @@ class Employee:
         table = PrettyTable()
         table.field_names = ["ID", "First Name", "Last Name", "Age", "Department", "Salary","managed_department"]
         if(employee[6]!=' '):
-            table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],'Confidential',employee[6]])
+            table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],'confedentianal',employee[6]])
         else:
             table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],employee[5],employee[6]])
         print(table)
