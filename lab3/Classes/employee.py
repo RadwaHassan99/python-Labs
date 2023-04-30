@@ -74,7 +74,10 @@ class Employee:
     def print_data(cls, employee):
         table = PrettyTable()
         table.field_names = ["ID", "First Name", "Last Name", "Age", "Department", "Salary","managed_department"]
-        table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],employee[5],employee[6]])
+        if(employee[6]!=' '):
+            table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],'Confidential',employee[6]])
+        else:
+            table.add_row([employee[0], employee[1], employee[2], employee[3], employee[4],employee[5],employee[6]])
         print(table)
 
 
