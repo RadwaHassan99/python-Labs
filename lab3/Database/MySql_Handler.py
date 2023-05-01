@@ -113,18 +113,7 @@ class MySqlHandler:
 
 
 
-# import mysql.connector
-# from mysql.connector import connect, Error
-# from getpass import getpass
-
-# try:
-#     with connect(
-#         host="localhost",
-#         user=input("Enter username: "),
-#         password=getpass("Enter password: "),
-#         database='python_lab2'
-#     ) as connection:
-#         my_cursor = connection.cursor()
+.cursor()
 
 #         # Execute SQL query to create a table
 #         my_cursor.execute('''CREATE TABLE employees (
@@ -134,15 +123,10 @@ class MySqlHandler:
 #                              age INT NOT NULL,
 #                              department CHAR(50),
 #                              salary INT
-#                              );''')
 
-#         # Execute SQL query to insert a record
-#         my_cursor.execute('''INSERT INTO employees (id, first_name, last_name, age, department, salary)
-#                              VALUES (1, 'Mariam', 'Mokhtar', 23, 'os_43', 950);''')
 
-#         # Commit the changes to the database
-#         connection.commit()
-#         print('Record inserted successfully')
 
-# except Error as e:
-#     print(e)
+ 
+
+
+
