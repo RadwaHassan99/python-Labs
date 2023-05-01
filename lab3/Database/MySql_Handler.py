@@ -113,16 +113,14 @@ class MySqlHandler:
 
 
 
-.cursor()
 
-#         # Execute SQL query to create a table
-#         my_cursor.execute('''CREATE TABLE employees (
-#                              id INT PRIMARY KEY NOT NULL,
-#                              first_name TEXT NOT NULL,
-#                              last_name TEXT NOT NULL,
-#                              age INT NOT NULL,
-#                              department CHAR(50),
-#                              salary INT
+
+
+
+
+                      
+
+
 
 
 
